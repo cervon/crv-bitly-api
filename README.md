@@ -7,4 +7,4 @@
 * Class for link shortening request using OAuth token.
 
 
-**You can extend class 'bitly' if you want to use other API endpoints.**
+**You can extend class `bitly` if you want to use other API endpoints.**

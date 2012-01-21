@@ -14,19 +14,7 @@ class bitly_examples
 
 		$response = $xauth_test->requestData(test_user, test_password);
 
-		$data = array();
-
-		if ($response)
-		{
-			foreach (explode('&', $response) AS $param)
-			{
-				list($var, $value) = explode('=', $param);
-
-				$data[$var] = $value;
-			}
-		}
-
-		return $data;
+		return parse_str($response);
 	}
 
 	public static function shorten()
